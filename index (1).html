@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Selection Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Bot Universe Hub ✨</h1>
+        <p>Choose your perfect AI companion and start an amazing conversation!</p>
+        
+        <div class="bot-grid">
+            <div class="bot-card" data-bot="astrologer">
+                <div class="bot-icon">🔮</div>
+                <h3>Astrologer Bot</h3>
+                <p>Reveals your cosmic destiny and star guidance</p>
+                <div class="bot-specialty">✨ Horoscopes & Predictions</div>
+                <button class="select-btn">Connect with Stars</button>
+            </div>
+            
+            <div class="bot-card" data-bot="tutor">
+                <div class="bot-icon">👨‍🏫</div>
+                <h3>Study Mentor</h3>
+                <p>Your personal learning companion</p>
+                <div class="bot-specialty">📚 Education & Skills</div>
+                <button class="select-btn">Start Learning</button>
+            </div>
+            
+            <div class="bot-card" data-bot="creative">
+                <div class="bot-icon">🎨</div>
+                <h3>Creative Muse</h3>
+                <p>Unleashes your artistic potential</p>
+                <div class="bot-specialty">🎭 Art & Writing</div>
+                <button class="select-btn">Get Inspired</button>
+            </div>
+            
+            <div class="bot-card" data-bot="tech">
+                <div class="bot-icon">🚀</div>
+                <h3>Tech Wizard</h3>
+                <p>Solves all your digital challenges</p>
+                <div class="bot-specialty">⚡ Technology & Code</div>
+                <button class="select-btn">Fix & Build</button>
+            </div>
+            
+            <div class="bot-card" data-bot="wellness">
+                <div class="bot-icon">🧘‍♀️</div>
+                <h3>Wellness Guide</h3>
+                <p>Your mindfulness and health companion</p>
+                <div class="bot-specialty">💆‍♀️ Health & Meditation</div>
+                <button class="select-btn">Find Balance</button>
+            </div>
+            
+            <div class="bot-card" data-bot="adventure">
+                <div class="bot-icon">🗺️</div>
+                <h3>Adventure Buddy</h3>
+                <p>Explores the world with you</p>
+                <div class="bot-specialty">🎒 Travel & Exploration</div>
+                <button class="select-btn">Start Journey</button>
+            </div>
+        </div>
+        
+        <div id="chat-interface" class="hidden">
+            <div class="chat-header">
+                <span id="current-bot-name"></span>
+                <button id="back-btn">← Back to Selection</button>
+            </div>
+            <div id="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
